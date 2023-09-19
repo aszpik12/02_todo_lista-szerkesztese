@@ -1,10 +1,4 @@
-import { TODOLIST2 } from "./adatok.js";
-import Megjelenit from "./Megjelenit.js";
+import Controller from "./controller/Controller.js"
 $(function () {
-    const szuloELEM = $(".tarolo");
-    new Megjelenit(TODOLIST2, szuloELEM);
-
-    $(window).on("torles", (event) => {
-        console.log(event.detail);
-    });
+   new Controller();
 });
